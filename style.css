@@ -1,0 +1,94 @@
+/* Main Styles */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f0f10;
+  margin: 0;
+  padding: 2rem;
+  font-size: 1.8rem;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #0f0f10;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #25cf02;
+  }
+}
+h1 {
+  text-align: center;
+  color: #25cf02;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  border: 1px solid #25cf02;
+  padding: 1.2rem;
+  text-align: center;
+  color: #25cf02;
+  font-weight: bold;
+}
+th {
+  background-color: #0f0f10;
+  color: white;
+  font-weight: bold;
+}
+tr {
+  background-color: #0f0f10;
+}
+tr:nth-child(even) {
+  background-color: #0f0f10f6;
+}
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 20px;
+}
+.spinner {
+  border: 4px solid #fff;
+  border-top: 4px solid #4caf50;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 32.5%;
+  }
+}
